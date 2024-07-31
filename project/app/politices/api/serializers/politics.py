@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ....models import Politices  
+from app.models import Politices  
 
 
 class PoliticsSerializer(serializers.ModelSerializer):

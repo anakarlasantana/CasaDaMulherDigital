@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from ....models import Politices  
-from ..serializers.politics import PoliticsSerializer  
+from app.models import Politices  
+from app.politices.api.serializers.politics import PoliticsSerializer  
 
 
 class PoliticsViewSet(viewsets.ModelViewSet):

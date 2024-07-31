@@ -5,4 +5,4 @@ from ....models import Politices
 class PoliticsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Politices
-        fields = ['id', 'name', 'description']
+        fields = ['id', 'name', 'description', 'data']

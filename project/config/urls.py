@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from app.policies.api.viewsets.politics import PoliticsViewSet
+from app.politices.api.viewsets.politics import PoliticsViewSet
 
 router = DefaultRouter()
 router.register(r'politics', PoliticsViewSet)

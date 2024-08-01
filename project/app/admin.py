@@ -19,15 +19,14 @@ class ContactAdmin(admin.ModelAdmin):
 
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description', 'get_units_display')
+    list_display = ('id', 'name', 'description')
     search_fields = ('name',)
-
-    def get_units_display(self, obj):
-        return ", ".join([unit.name for unit in obj.units.all()])
-    get_units_display.short_description = 'Units'
-
 
 @admin.register(Units)
 class UnitsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'description', 'address', 'email', 'phone')
+    list_display = ('id', 'name', 'description', 'address', 'email', 'phone', 'get_services_display')
     search_fields = ('name',)
+
+    def get_services_display(self, obj):
+        return ", ".join([service.name for service in obj.services.all()])
+    get_services_display.short_description = 'Services'

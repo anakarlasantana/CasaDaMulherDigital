@@ -5,4 +5,4 @@ from app.models import Units
 class UnitsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Units
-        fields = '__all__'
+        fields = ['id', 'name', 'description', 'address', 'email', 'phone']

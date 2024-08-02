@@ -56,7 +56,7 @@ O servidor estará disponível em http://localhost:5173/.
 6. Acessando o Django Admin você poderá testar o CRUD do banco.
 ```bash
 Login: admin
-Senha: Aadmin
+Senha: admin
 ```
 7. Acesse a Documentação da API
 http://127.0.0.1:8000/api/docs/swagger-ui/
